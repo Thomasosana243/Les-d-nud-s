@@ -22,6 +22,7 @@ const naturiste = {
 			website: "https://www.capdagde.com",
 			rating: 4.6,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 2,
@@ -35,6 +36,7 @@ const naturiste = {
 			website: "https://www.euronat.fr",
 			rating: 4.8,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 3,
@@ -48,6 +50,7 @@ const naturiste = {
 			website: "https://www.lajenny.fr",
 			rating: 4.5,
 			type: "Village vacances",
+			image: "",
 		},
 		{
 			id: 4,
@@ -61,6 +64,7 @@ const naturiste = {
 			website: "https://www.genese.fr",
 			rating: 4.3,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 5,
@@ -74,6 +78,7 @@ const naturiste = {
 			website: "https://www.belezy.com",
 			rating: 4.7,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 6,
@@ -87,6 +92,7 @@ const naturiste = {
 			website: "https://www.arna.com",
 			rating: 4.6,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 7,
@@ -100,6 +106,7 @@ const naturiste = {
 			website: "https://www.naturisme-rivabella.com",
 			rating: 4.4,
 			type: "Village vacances",
+			image: "",
 		},
 		{
 			id: 8,
@@ -113,6 +120,7 @@ const naturiste = {
 			website: "https://www.leserignanplage.com",
 			rating: 4.7,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 9,
@@ -126,6 +134,7 @@ const naturiste = {
 			website: "https://www.heliomonde.fr",
 			rating: 4.2,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 10,
@@ -139,6 +148,7 @@ const naturiste = {
 			website: "https://www.lasabliere.com",
 			rating: 4.5,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 11,
@@ -152,6 +162,7 @@ const naturiste = {
 			website: "https://www.leslauzons.com",
 			rating: 4.3,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 12,
@@ -165,6 +176,7 @@ const naturiste = {
 			website: "https://www.montalivet.com",
 			rating: 4.7,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 13,
@@ -178,6 +190,7 @@ const naturiste = {
 			website: "https://www.petitarlane.com",
 			rating: 4.4,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 14,
@@ -191,6 +204,7 @@ const naturiste = {
 			website: "https://www.lesmanoques.com",
 			rating: 4.2,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 15,
@@ -204,6 +218,7 @@ const naturiste = {
 			website: "https://www.closbarrat.com",
 			rating: 4.3,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 16,
@@ -217,6 +232,7 @@ const naturiste = {
 			website: "https://www.eglantier.com",
 			rating: 4.5,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 17,
@@ -230,6 +246,7 @@ const naturiste = {
 			website: "https://www.grandecosse.com",
 			rating: 4.4,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 18,
@@ -243,6 +260,7 @@ const naturiste = {
 			website: "https://www.latuquette.com",
 			rating: 4.6,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 19,
@@ -256,6 +274,7 @@ const naturiste = {
 			website: "https://www.laclapere.com",
 			rating: 4.5,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 20,
@@ -269,6 +288,7 @@ const naturiste = {
 			website: "https://www.campingleslauzons.com",
 			rating: 4.3,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 21,
@@ -282,6 +302,7 @@ const naturiste = {
 			website: "https://www.lecolombier.com",
 			rating: 4.5,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 22,
@@ -299,6 +320,7 @@ const naturiste = {
 			website: "https://www.lecouderc.com",
 			rating: 4.6,
 			type: "Domaine naturiste",
+			image: "",
 		},
 		{
 			id: 23,
@@ -312,6 +334,7 @@ const naturiste = {
 			website: "https://www.cluboasis.com",
 			rating: 4.7,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 24,
@@ -325,6 +348,7 @@ const naturiste = {
 			website: "https://www.campingdeveze.com",
 			rating: 4.3,
 			type: "Camping naturiste",
+			image: "",
 		},
 		{
 			id: 25,
@@ -338,6 +362,7 @@ const naturiste = {
 			website: "https://www.villagedubosc.com",
 			rating: 4.6,
 			type: "Village naturiste",
+			image: "",
 		},
 		{
 			id: 26,
@@ -351,6 +376,7 @@ const naturiste = {
 			website: "https://fr.wikipedia.org/wiki/Montcuq",
 			rating: 10,
 			type: "Village naturiste",
+			image: "",
 		},
 	],
 };
