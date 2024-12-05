@@ -1,0 +1,13 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-color);
+	border: solid 1px black;
+	padding: 15px;
+	border-radius: 10px;
+	position: static;
+}
+footer p {
+	color: var(--text-color);
+	margin: 1em 0;
+}
