@@ -6,20 +6,21 @@ import App from "./App.tsx";
 import Description from "./pages/Description.tsx";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "description",
-        element: <Description />,
-      },
-    ],
-  },
+	{
+		path: "/",
+		element: <App />,
+		children: [
+			{
+				path: "description",
+				element: <Description />,
+			},
+		],
+	},
 ]);
 
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
 );

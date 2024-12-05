@@ -4,8 +4,10 @@ import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 
 import "./App.css";
+
 import Header from "./components/Header/Header";
 import Description from "./pages/Description";
+import Rating from "./components/Rating";
 
 function App() {
 	const [photos, setPhotos] = useState([]);
@@ -20,8 +22,8 @@ function App() {
 			<NavBar />
 			<Header />
 			<Footer />
-
 			<div>
+				<Rating />
 				<Description />
 				<ul>
 					<li>
