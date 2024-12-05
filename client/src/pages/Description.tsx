@@ -1,5 +1,3 @@
-import App from "../App";
-
 const Description = () => {
   return (
     <div>

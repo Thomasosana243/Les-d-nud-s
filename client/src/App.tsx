@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar";
+
 import "./App.css";
 import Description from "./pages/Description";
 
@@ -13,6 +16,9 @@ function App() {
 
   return (
     <>
+      <NavBar />
+      <Footer />
+
       <div>
         <Description />
         <ul>
