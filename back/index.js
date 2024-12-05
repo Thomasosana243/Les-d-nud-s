@@ -355,7 +355,7 @@ const naturiste = {
 	],
 };
 
-app.get("/Naturiste", (req, res) => {
+app.get("/naturiste", (req, res) => {
 	res.json(naturiste);
 });
 
