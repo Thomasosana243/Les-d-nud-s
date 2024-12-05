@@ -1,0 +1,20 @@
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 20px;
+}
+header button {
+	background-color: #ffffff00;
+	height: auto;
+	width: auto;
+	padding: 15px 30px;
+	cursor: pointer;
+	border: 2px solid rgba(0, 0, 0, 0);
+	display: flex;
+}
+header img {
+    height
+	margin-right: 10px;
+}
