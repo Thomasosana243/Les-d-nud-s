@@ -14,12 +14,13 @@ function Rating() {
 			.then((response) => response.json())
 			.then((data) => {
 				const extractedSites: NaturistSite[] =
-					// biome-ignore lint/suspicious/noExplicitAny: <explanation>
-					data.naturist_sites_in_france.map((site: { id: any; name: any; rating: any; }) => ({
-						id: site.id,
-						name: site.name,
-						rating: site.rating,
-					}));
+					data.naturist_sites_in_france.map(
+						(site: { id: any; name: any; rating: any }) => ({
+							id: site.id,
+							name: site.name,
+							rating: site.rating,
+						}),
+					);
 				setSites(extractedSites);
 			})
 			.catch((error) =>
@@ -27,16 +28,22 @@ function Rating() {
 			);
 	}, []);
 
+	// Extraire les notes uniques
+	const uniqueRatings = Array.from(new Set(sites.map((site) => site.rating)));
+
 	return (
 		<div>
 			<h1>Notes des Sites Naturistes</h1>
-			<ul>
-				{sites.map((site) => (
-					<li key={site.id}>
-						<strong>{site.name}</strong>: {site.rating} ⭐
-					</li>
-				))}
-			</ul>
+			<label>
+				<select>
+					<option value="">Select a Rating</option>
+					{uniqueRatings.map((rating, index) => (
+						<option key={index} value={rating}>
+							{rating} ⭐
+						</option>
+					))}
+				</select>
+			</label>
 		</div>
 	);
 }
