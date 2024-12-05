@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/Rating.css";
 
 interface NaturistSite {
 	id: number;
@@ -30,25 +31,25 @@ function Rating() {
 			);
 	}, []);
 
-	// Extraire les notes uniques et les trier par ordre croissant
 	const uniqueRatings = Array.from(
 		new Set(sites.map((site) => site.rating)),
 	).sort((a, b) => a - b);
 
-	// Filtrer les sites en fonction de la note sélectionnée
 	const filteredSites =
 		selectedRating !== null
 			? sites.filter((site) => site.rating === selectedRating)
 			: [];
 
 	return (
-		<div>
+		<div className="rating-container">
 			<label>
 				<select
 					onChange={(e) => setSelectedRating(Number(e.target.value))}
 					value={selectedRating || ""}
 				>
-					<option value="">Select a Rating</option>
+					<option className="rating-selector" value="">
+						Select a Rating
+					</option>
 					{uniqueRatings.map((rating, index) => (
 						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<option key={index} value={rating}>

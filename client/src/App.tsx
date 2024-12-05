@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
-import Header from "./components/Header/Header";
 import Rating from "./components/Rating";
 import "./App.css";
 import Camping from "./components/Camping";
@@ -36,10 +35,12 @@ function App() {
 		<>
 			<main>
 				<NavBar />
-				<Rating />
-				{photos.map((display) => (
-					<Camping naturiste={display} key={display.id} />
-				))}
+				<section className="main-content">
+					<Rating />
+					{photos.map((display) => (
+						<Camping naturiste={display} key={display.id} />
+					))}
+				</section>
 				<div>
 					<ul>
 						<li>
