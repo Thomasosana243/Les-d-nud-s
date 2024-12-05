@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
-
+import Header from "./components/Header/Header";
 import Description from "./pages/Description";
 import Rating from "./components/Rating";
 
@@ -14,13 +14,13 @@ function App() {
       .then((res) => res.json())
       .then((data) => console.log(data));
   }, []);
-
   return (
     <>
       <NavBar />
+      <Header />
       <Footer />
-
       <div>
+        <Rating />
         <Description />
         <ul>
           <li>
