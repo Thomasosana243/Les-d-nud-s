@@ -30,18 +30,19 @@ function Rating() {
 			);
 	}, []);
 
-	// Extraire les notes uniques
-	const uniqueRatings = Array.from(new Set(sites.map((site) => site.rating)));
+	// Extraire les notes uniques et les trier par ordre croissant
+	const uniqueRatings = Array.from(
+		new Set(sites.map((site) => site.rating)),
+	).sort((a, b) => a - b);
 
 	// Filtrer les sites en fonction de la note sélectionnée
 	const filteredSites =
 		selectedRating !== null
 			? sites.filter((site) => site.rating === selectedRating)
-			: sites;
+			: [];
 
 	return (
 		<div>
-			<h1>Notes des Sites Naturistes</h1>
 			<label>
 				<select
 					onChange={(e) => setSelectedRating(Number(e.target.value))}
@@ -58,13 +59,17 @@ function Rating() {
 			</label>
 
 			<h2>Campings filtrés</h2>
-			<ul>
-				{filteredSites.map((site) => (
-					<li key={site.id}>
-						{site.name} - {site.rating} ⭐
-					</li>
-				))}
-			</ul>
+			{filteredSites.length === 0 ? (
+				<p>Aucun camping à afficher. Veuillez sélectionner une note.</p>
+			) : (
+				<ul>
+					{filteredSites.map((site) => (
+						<li key={site.id}>
+							{site.name} - {site.rating} ⭐
+						</li>
+					))}
+				</ul>
+			)}
 		</div>
 	);
 }
