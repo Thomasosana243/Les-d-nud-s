@@ -16,6 +16,7 @@ function Rating() {
 			.then((data) => {
 				const extractedSites: NaturistSite[] =
 					data.naturist_sites_in_france.map(
+						// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 						(site: { id: any; name: any; rating: any }) => ({
 							id: site.id,
 							name: site.name,
@@ -48,6 +49,7 @@ function Rating() {
 				>
 					<option value="">Select a Rating</option>
 					{uniqueRatings.map((rating, index) => (
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<option key={index} value={rating}>
 							{rating} ⭐
 						</option>
