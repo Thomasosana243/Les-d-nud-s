@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  border: solid 1px black;
+  padding: 15px;
+  border-radius: 10px;
+  position: static;
+}
+footer p {
+  color: orange;
+}

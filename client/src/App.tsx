@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import NavBar from "./components/NavBar/NavBar";
 
 import "./App.css";
 import Header from "./components/Header/Header";
+import Description from "./pages/Description";
 
 function App() {
+	const [photos, setPhotos] = useState([]);
 	useEffect(() => {
 		fetch("http://localhost:3310/naturiste")
 			.then((res) => res.json())
@@ -12,7 +17,18 @@ function App() {
 
 	return (
 		<>
+			<NavBar />
 			<Header />
+			<Footer />
+
+			<div>
+				<Description />
+				<ul>
+					<li>
+						<Link to="/description">Voir la Description</Link>
+					</li>
+				</ul>
+			</div>
 		</>
 	);
 }
