@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <Header />
-      <Footer />
+      {/* <Header /> */}
+
       <div>
         <Rating />
         <Description />
@@ -28,6 +28,7 @@ function App() {
           </li>
         </ul>
       </div>
+      <Footer />
     </>
   );
 }
