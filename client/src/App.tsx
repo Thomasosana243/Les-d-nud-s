@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
-import Header from "./components/Header/Header";
-
 import Rating from "./components/Rating";
 import "./App.css";
 import Camping from "./components/Camping";
@@ -35,19 +33,23 @@ function App() {
 
 	return (
 		<>
-			<NavBar />
-			<Rating />
-			{photos.map((display) => (
-				<Camping naturiste={display} key={display.id} />
-			))}
-			<div>
-				<ul>
-					<li>
-						<Link to="/description">Voir la Description</Link>
-					</li>
-				</ul>
-			</div>
-			<Footer />
+			<main>
+				<NavBar />
+				<section className="main-content">
+					<Rating />
+					{photos.map((display) => (
+						<Camping naturiste={display} key={display.id} />
+					))}
+				</section>
+				<div>
+					<ul>
+						<li>
+							<Link to="/description">Voir la Description</Link>
+						</li>
+					</ul>
+				</div>
+				<Footer />
+			</main>
 		</>
 	);
 }

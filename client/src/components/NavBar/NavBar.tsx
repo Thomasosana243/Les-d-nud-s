@@ -1,9 +1,11 @@
 import "./NavBar.css";
+import logo from "../../assets/images/ver-bleu-vert.png";
+
 function NavBar() {
 	return (
 		<>
 			<nav>
-				<img src="./src/assets/images/LogoSite.png" alt="Petit ver" />
+				<img src={logo} alt="Petit ver vert" />
 				<button type="button">Home</button>
 			</nav>
 		</>

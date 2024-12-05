@@ -1,3 +1,7 @@
+nav {
+	width: 100%;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
@@ -15,6 +19,5 @@ header button {
 	display: flex;
 }
 header img {
-    height
 	margin-right: 10px;
 }
