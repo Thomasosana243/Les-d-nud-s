@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Rating from "./components/Rating";
 
 import "./App.css";
 
@@ -10,7 +11,11 @@ function App() {
 			.then((data) => console.log(data));
 	}, []);
 
-	return <></>;
+	return (
+		<>
+			<Rating />
+		</>
+	);
 }
 
 export default App;
