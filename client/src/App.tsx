@@ -2,14 +2,11 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Location from "./components/Location";
 import Capacity from "./components/Capacity";
-
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-
 import Rating from "./components/Rating";
 import Camping from "./components/Camping";
 import Features from "./components/Features";
-
 import "./App.css";
 
 interface naturisteProps {
@@ -24,7 +21,7 @@ interface naturisteProps {
 		features: [string];
 		website: string;
 		rating: number;
-    Capacity: number;
+		Capacity: number;
 		type: string;
 		image: string;
 	};
@@ -60,4 +57,3 @@ function App() {
 }
 
 export default App;
- 
