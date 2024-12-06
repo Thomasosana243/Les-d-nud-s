@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface NaturistSite {
 	id: number;
@@ -69,6 +69,7 @@ function Features() {
 						/>
 						<ul>
 							{site.features.map((feat, index) => (
+								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								<li key={index}>{feat}</li>
 							))}
 						</ul>
