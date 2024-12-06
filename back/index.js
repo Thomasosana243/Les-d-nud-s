@@ -54,6 +54,7 @@ const naturiste = {
 			type: "Village vacances",
 			image:
 				"https://i0.wp.com/www.lajenny.fr/wp-content/uploads/2020/09/EB1A5413-e1600708395753-600x400.jpg",
+			description: "blablablabla",
 		},
 		{
 			id: 4,
@@ -408,6 +409,15 @@ const naturiste = {
 
 app.get("/naturiste", (req, res) => {
 	res.json(naturiste);
+});
+
+app.get("/naturiste/:id", (req, res) => {
+	const wantedId = parseInt(req.params.id);
+	const site = naturiste.naturist_sites_in_france.find(
+		(nat) => nat.id === wantedId,
+	);
+	console.log(site);
+	res.json(site);
 });
 
 app.listen(serverPort, () => {
