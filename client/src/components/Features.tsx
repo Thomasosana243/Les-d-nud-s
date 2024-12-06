@@ -25,7 +25,7 @@ function Features() {
 			.then((res) => res.json())
 			.then((data) => {
 				setSites(data.naturist_sites_in_france);
-				setFilteredSites(data.naturist_sites_in_france);
+				// Ne pas initialiser filteredSites ici
 			})
 			.catch((error) =>
 				console.error("Erreur lors de la réception des données : ", error),
@@ -43,7 +43,7 @@ function Features() {
 		if (feature) {
 			setFilteredSites(sites.filter((site) => site.features.includes(feature)));
 		} else {
-			setFilteredSites(sites);
+			setFilteredSites([]); // Réinitialiser si aucune feature n'est sélectionnée
 		}
 	};
 
@@ -61,9 +61,17 @@ function Features() {
 			<ul>
 				{filteredSites.map((site) => (
 					<li key={site.id}>
-						{site.name}
-						<img src={site.image} alt={site.name} />
-						{site.features}
+						<h3>{site.name}</h3>
+						<img
+							src={site.image}
+							alt={site.name}
+							style={{ width: "100px", height: "auto" }}
+						/>
+						<ul>
+							{site.features.map((feat, index) => (
+								<li key={index}>{feat}</li>
+							))}
+						</ul>
 					</li>
 				))}
 			</ul>
