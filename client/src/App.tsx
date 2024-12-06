@@ -41,6 +41,7 @@ function App() {
 			<section className="main-content">
 				<Rating />
 				<Location />
+				<Features />
 				<main className="main">
 					<Link to="/description">
 						{photos.map((display) => (
