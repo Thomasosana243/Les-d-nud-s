@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Location from "../components/Filters/Location";
+import Location from "./components/Location";
 import Footer from "./components/Footer/Footer";
-import NavBar from "./components/NavBar/NavBar";
 import Rating from "./components/Rating";
-import "./App.css";
 import Camping from "./components/Camping";
 import { useParams } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
+import "./App.css";
 
 interface naturisteProps {
 	naturiste: {
