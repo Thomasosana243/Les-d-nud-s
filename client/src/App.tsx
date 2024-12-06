@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Location from "../components/Filters/Location";
 
-import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import Location from "./components/Location";
 import Rating from "./components/Rating";
-import "./App.css";
 import Camping from "./components/Camping";
 import Features from "./components/Features";
+
+import "./App.css";
 
 interface naturisteProps {
 	naturiste: {
@@ -44,9 +45,7 @@ function App() {
 					{photos.map((display) => (
 						<Camping naturiste={display} key={display.id} />
 					))}
-					{photos.map((display) => (
-						<Features features={display} key={display.id} />
-					))}
+					<Features />
 				</section>
 				<div>
 					<ul>
