@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Location from "./components/Location";
+import Capacity from "./components/Capacity";
 
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import Location from "./components/Location";
+
 import Rating from "./components/Rating";
 import Camping from "./components/Camping";
 import Features from "./components/Features";
@@ -19,9 +21,10 @@ interface naturisteProps {
       region: string;
       country: string;
     };
-    features: [string, string, string];
+    features: [string];
     website: string;
     rating: number;
+    Capacity: number;
     type: string;
     image: string;
   };
@@ -42,6 +45,7 @@ function App() {
         <Rating />
         <Location />
         <Features />
+        <Capacity />
         <main className="main">
           <Link to="/description">
             {photos.map((display) => (
