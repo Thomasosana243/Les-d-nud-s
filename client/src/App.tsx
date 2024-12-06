@@ -27,6 +27,9 @@ interface naturisteProps {
 
 function App() {
 	const [photos, setPhotos] = useState<naturisteProps[]>([]);
+	const [getId, setGetId] = useState<naturisteProps[]>([]);
+	const { id } = useParams();
+
 	useEffect(() => {
 		fetch("http://localhost:3310/naturiste")
 			.then((res) => res.json())
