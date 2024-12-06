@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-import "./components/Header/Header.css";
+import "./Header.css";
 import LogoSite from "../../assets/images/LogoSite.png";
 
 // Départements
