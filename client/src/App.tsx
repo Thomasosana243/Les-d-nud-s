@@ -37,25 +37,19 @@ function App() {
 
 	return (
 		<>
-			<main>
-				<NavBar />
-				<section className="main-content">
-					<Rating />
-					<Location />
-					{photos.map((display) => (
-						<Camping naturiste={display} key={display.id} />
-					))}
-					<Features />
-				</section>
-				<div>
-					<ul>
-						<li>
-							<Link to="/description">Voir la Description</Link>
-						</li>
-					</ul>
-				</div>
-				<Footer />
-			</main>
+			<NavBar />
+			<section className="main-content">
+				<Rating />
+				<Location />
+				<main className="main">
+					<Link to="/description">
+						{photos.map((display) => (
+							<Camping naturiste={display} key={display.id} />
+						))}
+					</Link>
+				</main>
+			</section>
+			<Footer />
 		</>
 	);
 }

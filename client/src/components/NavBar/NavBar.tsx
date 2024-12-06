@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/ver-bleu-vert.png";
 
 function NavBar() {
@@ -6,7 +7,9 @@ function NavBar() {
 		<>
 			<nav>
 				<img src={logo} alt="Petit ver vert" />
-				<button type="button">Home</button>
+				<Link to="/">
+					<button type="button">Home</button>
+				</Link>
 			</nav>
 		</>
 	);
