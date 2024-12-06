@@ -62,7 +62,7 @@ function Features() {
 				{filteredSites.map((site) => (
 					<li key={site.id}>
 						{site.name}
-						{site.image}
+						<img src={site.image} alt={site.name} />
 						{site.features}
 					</li>
 				))}
