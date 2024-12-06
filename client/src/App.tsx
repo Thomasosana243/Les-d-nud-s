@@ -21,7 +21,7 @@ function App() {
 
       <div>
         <Rating />
-        <Description />
+
         <ul>
           <li>
             <Link to="/description">Voir la Description</Link>
