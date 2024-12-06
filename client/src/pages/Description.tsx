@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 interface NaturistProps {
   id: number;
@@ -30,7 +32,8 @@ function Description() {
   }, []);
 
   return (
-    <div>
+    <>
+      <NavBar />
       <h2>Description du projet</h2>
       {element.map((ouais) => (
         <div>
@@ -38,14 +41,8 @@ function Description() {
           <p>{ouais.features}</p>
         </div>
       ))}
-
-      <p>
-        <strong>title </strong>
-        {element.name}
-      </p>
-
-      <p></p>
-    </div>
+      <Footer />
+    </>
   );
 }
 
