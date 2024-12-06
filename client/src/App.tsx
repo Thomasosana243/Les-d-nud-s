@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Location from "../components/Filters/Location";
+import Capacity from "../Components/Filters/Capacity";
 
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
@@ -20,6 +21,7 @@ interface naturisteProps {
     features: [string, string, string];
     website: string;
     rating: number;
+    Capacity: number;
     type: string;
     image: string;
   };
@@ -40,6 +42,7 @@ function App() {
         <section className="main-content">
           <Rating />
           <Location />
+          <Capacity />
           {photos.map((display) => (
             <Camping naturiste={display} key={display.id} />
           ))}
