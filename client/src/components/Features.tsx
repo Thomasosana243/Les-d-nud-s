@@ -67,7 +67,7 @@ function Features() {
 							alt={site.name}
 							style={{ width: "100px", height: "auto" }}
 						/>
-						<ul>
+						<ul> d
 							{site.features.map((feat, index) => (
 								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								<li key={index}>{feat}</li>
