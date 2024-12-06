@@ -18,17 +18,17 @@ interface naturisteProps {
 function Camping({ naturiste }: naturisteProps) {
 	return (
 		<>
-			<div>
-				<p>
-					{naturiste.name}
-					{naturiste.location.city}
-					{naturiste.location.region}
-					{naturiste.location.country}
-					{naturiste.website}
-					{naturiste.rating}
-					{naturiste.image}
-					{naturiste.type}
-				</p>
+			<div className="camping">
+				<img src={naturiste.image} alt={naturiste.name} />
+				<ul className="paragraphe">
+					<li>Nom : {naturiste.name}</li>
+					<li>Ville : {naturiste.location.city}</li>
+					<li>Région : {naturiste.location.region}</li>
+					<li>Pays : {naturiste.location.country}</li>
+					<li>Site : {naturiste.website}</li>
+					<li>Etoiles : {naturiste.rating}</li>
+					<li>Type : {naturiste.type}</li>
+				</ul>
 			</div>
 		</>
 	);

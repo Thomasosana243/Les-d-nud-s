@@ -26,10 +26,7 @@ interface naturisteProps {
 }
 
 function App() {
-	const { id } = useParams();
 	const [photos, setPhotos] = useState<naturisteProps[]>([]);
-	const [getId, setGetId] = useState<naturisteProps[]>([]);
-
 	useEffect(() => {
 		fetch("http://localhost:3310/naturiste")
 			.then((res) => res.json())
@@ -41,7 +38,6 @@ function App() {
 			.then((res) => res.json())
 			.then((data) => setPhotos(data.naturist_sites_in_france));
 	}, [id]);
-
 	return (
 		<>
 			<main>
