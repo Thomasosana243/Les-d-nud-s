@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 function Description() {
+	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 	const [element, setElement] = useState<any>(null);
 	useEffect(() => {
 		fetch("http://localhost:3310/naturiste")

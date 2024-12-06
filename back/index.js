@@ -349,7 +349,7 @@ const naturiste = {
 			},
 			features: ["Détente", "Piscine", "Randonnées"],
 			website: "https://fr.wikipedia.org/wiki/Montcuq",
-			rating: 10,
+			rating: 5,
 			type: "Village naturiste",
 		},
 	],

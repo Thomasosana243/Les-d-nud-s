@@ -11,3 +11,8 @@ footer p {
 	color: var(--text-color);
 	margin: 1em 0;
 }
+
+.citation {
+	font-style: italic;
+	font-weight: 300;
+}
